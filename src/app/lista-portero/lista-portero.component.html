@@ -1,0 +1,20 @@
+
+<h3 style="text-align:center"> Lista Porteros
+	<abbr title="Haz click en cualquier botton para ver los detalles de la mascota" ><button class="btn btn-warning">?</button></abbr>
+</h3>
+
+
+<ul *ngFor="let portero of listaPorteros" class="list-group">
+    <br>
+    <div class="contenedor">
+        <a routerLink="/detalleportero/{{portero.id}}" class="btn btn-primary" style="width: 18rem;">
+            Id: {{portero.data.idPortero}}<br>
+            Nombre: {{portero.data.nombre}} 
+	    </a>
+    </div>
+</ul>
+
+<br><br>
+<div class="contenedor">
+    <button type="button" class="btn btn-warning" (click)="goBack()">&nbsp;&nbsp;Volver&nbsp;&nbsp;</button>
+</div>

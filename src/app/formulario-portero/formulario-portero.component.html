@@ -1,0 +1,61 @@
+<div class="contenedor">
+    <div class="card">  
+        <form [formGroup]="dataPortero">
+            <div class="form-group">
+              <label>Id</label>
+              <input class="form-control" formControlName="idPortero">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input class="form-control" formControlName="nombre">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Apellidos</label>
+                <input class="form-control" formControlName="apellidos">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Ciudad</label>
+                <input class="form-control" formControlName="ciudad">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Telefono</label>
+                <input class="form-control" formControlName="telefono">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Mail</label>
+                <input class="form-control" formControlName="mail">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Mes Disponible</label>
+                <input class="form-control" formControlName="mesDisponible">
+            </div>
+
+            <br/>
+            <div class="form-group">
+                <label>Activo</label>
+                <input class="form-control" formControlName="activo">
+            </div>
+
+            <br/>
+            <button class="btn btn-info" type="button" class="btn btn-primary" (click)="onSubmit()">&nbsp;&nbsp;&nbsp;&nbsp;Guardar&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            &nbsp;
+            <button type="button" class="btn btn-warning" (click)="goBack()">&nbsp;&nbsp;Volver&nbsp;&nbsp;</button>
+            <br>
+            <button type="button" class="btn btn-danger" (click)="eliminaPortero()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eliminar Portero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            <br>
+            <button type="button" class="btn btn-success" (click)="creaPortero()">&nbsp;&nbsp;&nbsp;Crear un nuevo Portero&nbsp;&nbsp;&nbsp;</button>
+        </form>
+    </div>
+</div>
